@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.appointment {
+  height: 100vh;
+  background: url("../img/BG\ Image.png") no-repeat center;
+}
+.container {
+  width: 1015px;
+  margin: 0 auto;
+}
+.wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+.left{
+  margin-right: 111px;
+}
+.appointment--block {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 76px 57px 154px 57px;
+  position: relative;
+}
+.appointment--title {
+  margin-bottom: 43px;
+  display: flex;
+  justify-content: center;
+}
+.appointment--title--text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #02133c;
+}
+.form--block {
+  display: flex;
+}
+.form--name {
+  margin-right: 23px;
+  margin-bottom: 22px;
+  width: 204px;
+  height: 48px;
+  background: #f5f5f5;
+  border: 0;
+  padding: 0 0 0 17px;
+}
+.form--email {
+  width: 204px;
+  padding: 0 0 0 17px;
+  height: 48px;
+  background: #f5f5f5;
+  border: 0;
+}
+.form--phone {
+  margin-right: 23px;
+  margin-bottom: 22px;
+  width: 204px;
+  padding: 0 0 0 17px;
+  height: 48px;
+  background: #f5f5f5;
+  border: 0;
+}
+.form--select {
+  width: 204px;
+  padding: 0 0 0 17px;
+  height: 48px;
+  background: #f5f5f5;
+  border: 0;
+}
+.form--description {
+  width: 100%;
+  height: 180px;
+  background: #f5f5f5;
+  border: 0;
+}
+.form--description::placeholder {
+  transform: translateY(-70px) translateX(17px);
+}
+.form--button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  border-radius: 2px;
+  border: 0;
+  background-color: #c40b0b;
+  width: 211px;
+  height: 48px;
+  padding: 0 0 0 19px;
+  position: absolute;
+  right: 57px;
+  bottom: 60px;
+}
+.form--button::after {
+  content: "";
+  background: url("../img/Button\ Treatment\ 48px.svg") no-repeat center;
+  display: block;
+  width: 48px;
+  height: 48px;
+  transform: translateX(5px);
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.appointment--subtitle{
+  margin-bottom: 46px;
+}
+.appointment--subtitle--text{
+  font-family: 'Roboto';
+  text-align: center;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+.appointment--number{
+  margin-bottom: 46px;
+}
+.appointment--number--value{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 56px;
+  color: #C40B0B;
+}
+.appointment--serve--text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}

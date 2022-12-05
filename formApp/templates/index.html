@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="appointment">
+        <div class="container">
+            <div class="wrapper">
+                <div class="left">
+                    <div class="appointment--block">
+                        <div class="appointment--title">
+                            <h2 class="appointment--title--text">
+                                Make an appointment
+                            </h2>
+                        </div>
+                        <form class="form" method="post" action="appointment/">
+                            {% csrf_token %}
+                            <div class="form--block">
+                                <input name="name" type="text" class="form--name" placeholder="Name">
+                                <input name="email" type="email" class="form--email" placeholder="Email">
+                            </div>
+                            <div class="form--block">
+                                <input name="phone" type="phone" class="form--phone" placeholder="Phone">
+                                <input name="select" type="text" class="form--select" placeholder="Select service">
+                            </div>
+                            <div class="form--block">
+                                <input name="description" type="text" class="form--description" placeholder="Tell us about the car needing service(s)">
+                            </div>
+                            <div class="form--block">
+                                <button class="form--button" type="submit">MAKE AN APPOINTMENT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="appointment--subtitle">
+                        <h4 class="appointment--subtitle--text">
+                            Maxime placeat facere possimus omnis 
+                        </h4>
+                    </div>
+                    <div class="appointment--number">
+                        <p class="appointment--number--value">
+                            17k
+                        </p>
+                    </div>
+                    <div class="appointment--serve">
+                        <h6 class="appointment--serve--text">
+                            customers served (and counting)
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
